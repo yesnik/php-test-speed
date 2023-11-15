@@ -28,7 +28,16 @@
     docker compose build --build-arg HOST_USER_ID="$(id -u)" --build-arg HOST_GROUP_ID="$(id -g)"
     docker compose up -d
     ```
-3. Откройте в браузере http://127.0.0.1:8080/
+    Может возникнуть ошибка:
+    ```bash
+    failed to solve: executor failed running [/bin/sh -c addgroup -g ${HOST_GROUP_ID} --system app]: exit code: 1
+    ```
+    Для ее устранения запустите команду вручую указав значения переменных, например:
+    ```bash
+    docker compose build --build-arg HOST_USER_ID="1001" --build-arg HOST_GROUP_ID="1001"
+    docker compose up -d
+    ```
+4. Откройте в браузере http://127.0.0.1:8080/
 
 ## Проверка скорости работы приложения
 
