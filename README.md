@@ -17,6 +17,7 @@
 1. Клонируем репозиторий:
     ```bash
     git clone https://github.com/yesnik/php-test-speed
+    cd php-test-speed
     ```
 2. Делаем сборку образов и запускаем проект:
     ```bash
