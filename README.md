@@ -37,7 +37,7 @@
     docker compose build --build-arg HOST_USER_ID="1001" --build-arg HOST_GROUP_ID="1001"
     docker compose up -d
     ```
-4. Откройте в браузере http://127.0.0.1:8080/
+4. Откройте в браузере http://127.0.0.1:8080/ или http://localhost:8080/
 
 ## Проверка скорости работы приложения
 
